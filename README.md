@@ -15,21 +15,22 @@ This is a minimal, dependency-light example for time-series anomaly detection.
 
 ## Repository structure
 
-```text
 rocket-health-monitor-demo/
 ├─ data/
-│  └─ telemetry_small.csv            # tiny synthetic telemetry with labels
+│  └─ telemetry_small.csv
 ├─ src/
-│  ├─ data_utils.py                  # CSV loader
-│  ├─ detectors.py                   # Z-score, EWMA, IsolationForest
-│  ├─ metrics.py                     # precision / recall / f1 (point-level)
-│  └─ run_monitoring_experiment.py   # main script
+│  ├─ __init__.py
+│  ├─ data_utils.py
+│  ├─ detectors.py
+│  ├─ metrics.py
+│  └─ run_monitoring_experiment.py
 ├─ tests/
+│  ├─ __init__.py
 │  ├─ test_detectors.py
 │  └─ test_metrics.py
 ├─ requirements.txt
+├─ .gitignore
 └─ README.md
-
 
 
 Data

